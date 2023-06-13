@@ -93,8 +93,8 @@
 
                   <!-- Menu Ecount-->
                   <li class="user-footer">
-                      <li><a href="{{url('password')}}"><i class="fa fa-gear fa-fw"></i> Ganti Passwor Baru</a></li><br>
-                      <li><a href="{{url('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Keluar</a></li>
+                      <li><a href="{{url('/password')}}"><i class="fa fa-gear fa-fw"></i> Ganti Passwor Baru</a></li><br>
+                      <li><a href="{{url('/logout')}}"><i class="fa fa-sign-out fa-fw"></i> Keluar</a></li>
                       <i class="fa-solid fa-right-from-bracket"></i>
                       <li class="divider"></li>
                   </li>
@@ -547,7 +547,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: '<b style="font-size:12px">TOTAL PERSENT WILAYAH</b>  <span style="font-size:12px">'
+            text: '<b style="font-size:9px">TOTAL PERSENT WILAYAH</b>  <span style="font-size:9px">'
         }
 
     },
@@ -565,52 +565,52 @@ Highcharts.chart('container', {
     },
 
     tooltip: {
-        headerFormat: '<span style="font-size:12px">{series.name}</span><br>',
-        pointFormat: '<span style="font-size:12px;color:{point.color}"> <b style="font-size:12px;">{point.name}</span>:</b> <b style="font-size:12px;"><b style="font-size:12px;"> {point.y:.2f}%</b> of total</b><br/>'
+        headerFormat: '<span style="font-size:9px">{series.name}</span><br>',
+        pointFormat: '<span style="font-size:9px;color:{point.color}"> <b style="font-size:9px;">{point.name}</span>:</b> <b style="font-size:9px;"><b style="font-size:12px;"> {point.y:.2f}%</b> of total</b><br/>'
     },
 
     series: [
         {
-            name: '<b style="font-size:12px">WILAYAH</b>  <span style="font-size:12px">',
+            name: 'WILAYAH',
             colorByPoint: true,
             data: [
               {
-              name: '<b style="font-size:12px">Toli</b>  <span style="font-size:12px">',
+              name: 'Toli',
                     y:  {{ $cowntoli }},
                     drilldown: 'Toli'
                 },
                 {
-                    name: '<b style="font-size:12px">Bogo</b>  <span style="font-size:12px">',
+                    name: 'Bogo',
                     y: {{ $cownbogo }},
                     drilldown: 'Bogo'
                 },
                 {
-                    name: '<b style="font-size:12px">Yamo</b>  <span style="font-size:12px">',
+                    name: 'Yamo',
                     y: {{ $cownyamo }},
                     drilldown: 'Yamo'
                 },
                 {
-                    name: '<b style="font-size:12px">Yahukimo</b>  <span style="font-size:12px">',
+                    name: 'Yahukimo',
                     y: {{ $cownyahukimo }},
                     drilldown: 'Yahukimo'
                 },
                 {
-                    name: '<b style="font-size:12px">Pengunungan Bintang</b>  <span style="font-size:12px">',
+                    name: 'Pengunungan Bintang',
                     y: {{ $cownbintang}},
                     drilldown: 'Pengunungan Bintang'
                 },
                 {
-                    name: '<b style="font-size:12px">Pantai Selatan</b>  <span style="font-size:12px">',
+                    name: 'Pantai Selatan',
                     y: {{ $cownselatan }},
                     drilldown: 'Pantai Selatan'
                 },
                 {
-                    name: '<b style="font-size:12px">Pantai Utara</b>  <span style="font-size:12px">',
+                    name: 'Pantai Utara',
                     y: {{ $cownutara }},
                     drilldown: 'Pantai Utara'
                 },
                 {
-                    name: '<b style="font-size:12px">Jasumbas</b>  <span style="font-size:12px">',
+                    name: 'Jasumbas',
                     y: {{ $cownjasumbas }},
                     drilldown: 'Jasumbas'
                 }

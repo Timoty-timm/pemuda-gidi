@@ -5,35 +5,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sistem Informasi | Pemunda GIDI</title>
-
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="{{ URL::to('/plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="{{URL::to('/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{URL::to('/bower_components/font-awesome/css/font-awesome.min.css')}}">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="{{URL::to('/bower_components/Ionicons/css/ionicons.min.css')}}">
+  <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
      <!-- jvectormap -->
-  <link rel="stylesheet" href="{{URL::to('/bower_components/jvectormap/jquery-jvectormap.css')}}">
+  <link rel="stylesheet" href="bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Tema style -->
   <link rel="stylesheet" href="{{URL::to('/dist/css/AdminLTE.min.css')}}">
   <!-- Color and bakcground -->
   <link rel="stylesheet" href="{{URL::to('/dist/css/skins/_all-skins.min.css')}}">
 
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="{{ URL::to('/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="/plugins/daterangepicker/daterangepicker.css">
+  <link rel="stylesheet" href="{{ URL::to('/plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
-  <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
+  <link rel="stylesheet" href="{{ URL::to('/plugins/summernote/summernote-bs4.min.css') }}">
 
 </head>
 
@@ -48,7 +46,7 @@
           <span class="logo-mini"><b>GI</b>DI</span>
           <!-- logo for regular state and mobile devices -->
 
-        <span class="logo-lg"><img src="dist/img/logo_pemudagidi.png" class="img-circle" alt="GIDI" style="width:24%;" > <i class="fa-solid fa-hands-bound"></i>PEMUDA <b>GIDI</b></span></a>
+        <span class="logo-lg"><img src="/dist/img/logo_pemudagidi.png" class="img-circle" alt="GIDI" style="width:24%;" > <i class="fa-solid fa-hands-bound"></i>PEMUDA <b>GIDI</b></span></a>
         <nav class="navbar navbar-static-top">
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
@@ -342,119 +340,6 @@
               </div>           
             </div>
           </div>
-
-       {{-- <div class="container">  
-       <div class="row">
-       <div class="col-lg-3 ">
-       <br>
-        <div class="card shadow" style="background: rgb(129, 28, 129)">
-        
-          <div class="card-body text-center " style="color: white">
-           
-            <div class="card-title fw-bold "> <h3> BOGO</h3></div>
-            <p class="text-secondary">Jumlah Anggota Pemuda</p>
-            <span> {{ number_format($cownbogo, 0, ',', '.') }}</span>
-             <hr>
-          </div>
-        </div>
-    </div>
-    
-    <div class="col-lg-3 ">
-      <br>
-       <div class="card shadow " style="background: rgb(95, 70, 25)">
-        
-         <div class="card-body text-center" style="color: white">
-          
-           <div class="card-title fw-bold  h4"> <h3> TOLI</h3></div>
-           <p class="text-secondary">Jumlah Anggota Pemuda</p>
-           <span>{{  number_format($cowntoli, 0, ',', '.')  }}</span>
-            <hr>
-         </div>
-       </div>
-   </div>
-   
-   <div class="col-lg-3 ">
-    <br>
-     <div class="card shadow  " style="background: green">
-      
-       <div class="card-body text-center " style="color: white">
-        
-         <div class="card-title fw-bold  h4"> <h3> YAMO</h3></div>
-         <p class="text-secondary">Jumlah Anggota Pemuda</p>
-         <span>{{  number_format($cownyamo, 0, ',', '.')  }}</span>
-          <hr>
-       </div>
-     </div>
- </div>
- 
- <div class="col-lg-3 ">
-  <br>
-   <div class="card shadow  " style="background:rgb(209, 180, 12)">
-    
-     <div class="card-body text-center" style="color: white">
-      
-       <div class="card-title fw-bold  h4"> <h3> YAHUKIMO</h3></div>
-       <p class="text-secondary">Jumlah Anggota Pemuda</p>
-       <span>{{  number_format($cownyahukimo, 0, ',', '.')  }}</span>
-        <hr>
-     </div>
-   </div>
-</div>
-
-<div class="col-lg-3 ">
-  <br>
-   <div class="card shadow  " style="background: rgb(136, 45, 45)">
-    
-     <div class="card-body text-center " style="color: white">
-      
-       <div class="card-title fw-bold  h4"> <h3> PEGUNGAN BINTANG</h3></div>
-       <p class="text-secondary">Jumlah Anggota Pemuda</p>
-       <span>{{  number_format($cownbintang, 0, ',', '.')  }}</span>
-        <hr>
-     </div>
-   </div>
-</div>
-<div class="col-lg-3 ">
-  <br>
-   <div class="card shadow" style="background: rgb(28, 28, 145)">
-    
-     <div class="card-body text-center " style="color: white" >
-      
-       <div class="card-title fw-bold  h4"> <h3> PANTAI SELATAN</h3></div>
-       <p class="text-secondary">Jumlah Anggota Pemuda</p>
-       <span></span>{{  number_format($cownselatan, 0, ',', '.')  }}
-        <hr>
-     </div>
-   </div>
-</div>
-<div class="col-lg-3 ">
-  <br>
-   <div class="card shadow " style="background:rgba(48, 102, 151, 0.445)" >
-    
-     <div class="card-body text-center " style="color: white" >
-      
-       <div class="card-title fw-bold  h4"> <h3> PANTAI UTARA</h3></div>
-       <p class="text-secondary">Jumlah Anggota Pemuda</p>
-       <span>{{  number_format($cownutara, 0, ',', '.')  }}</span>
-        <hr>
-     </div>
-   </div>
-</div>
-<div class="col-lg-3 ">
-  <br>
-   <div class="card shadow btn-danger">
-    
-     <div class="card-body text-center " style="color: white" >
-      
-       <div class="card-title fw-bold  h4"> <h3> JASUMBAS</h3></div>
-       <p class="text-secondary">Jumlah Anggota Pemuda</p>
-       <span>{{  number_format($cownjasumbas, 0, ',', '.')  }}</span>
-        <hr>
-     </div>
-   </div>
-</div>
-  </div>
-   </div> --}}
   <hr>
 
       
@@ -503,15 +388,15 @@
 
 
 <!-- jQuery 3 -->
-<script src="{{URL::to('/bower_components/jquery/dist/jquery.min.js')}}"></script>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{URL::to('/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 <!-- FastClick -->
-<script src="{{URL::to('/bower_components/fastclick/lib/fastclick.js')}}"></script>
+<script src="bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="{{URL::to('/dist/js/adminlte.min.js')}}"></script>
 <!-- Sparkline -->
-<script src="{{URL::to('/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
+<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap  -->
 <script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
 <script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>

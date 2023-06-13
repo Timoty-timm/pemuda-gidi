@@ -41,8 +41,8 @@ use App\Http\Controllers\PengumumanController;
 
 //tampilan depan
 
-// Route::get('data', function () {
-//     return view('admin');
+// Route::get('/', function () {
+//     return view('.Home.home');
 // });
 
 
@@ -64,6 +64,7 @@ Route::controller(LoginController::class)->group(function(){
     Route::post('login/proses', 'proses');
     Route::get('logout', 'logout');
     //URL tampilan user umum
+Route::get('/', [App\Http\Controllers\UserUmumController::class, 'index']);
 Route::resource('beranda', UserUmumController::class);
 Route::get('user-vimisi', [App\Http\Controllers\UserUmumController::class, 'visimisi']);
 Route::get('user-sejarah', [App\Http\Controllers\UserUmumController::class, 'sejarah']);

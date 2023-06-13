@@ -14,7 +14,7 @@ use App\Models\Visimisi;
 use App\Models\Sejarah;
 use App\Models\Renungan;
 use App\Models\Program_Klasis;
-use App\Models\Program_wilayah;
+use App\Models\Program_Wilayah;
 use App\Models\IuranWajib;
 use App\Models\Kengiatan;
 use App\Models\Organisasi;
@@ -87,7 +87,7 @@ class UserUmumController extends Controller
 
     public function program_wilayah(){
         $corousel = Carousel::all();
-        $program_wilayah = Program_wilayah::all();
+        $program_wilayah = Program_Wilayah::all();
         return view('Tampilan-User.program_wilayah', compact('program_wilayah','corousel'))->with('program_wilayah', $program_wilayah)->with('i', (request()->input('page', 1) - 1) * 5);
     }
 

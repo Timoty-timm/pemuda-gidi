@@ -49,7 +49,7 @@
 
       <nav id="navbar" class="navbar ml-5" >
         <ul class="nav-list">
-         <li><a class="navbar-brand" href="{{ url('beranda')}}" style="color: white;"> Beranda</a></li>
+         <li><a class="navbar-brand" href="/" style="color: white;"> Beranda</a></li>
           <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
               <li><a href="{{url('user-vimisi')}}">Visi dan Misi</a></li>
@@ -74,7 +74,7 @@
             </ul>
           </li>
           <li>
-            <a href="{{url('http://127.0.0.1:8000/login')}}">
+            <a href="{{url('/login')}}">
             <button class="button"> Login</button></a>
           </li>
         </ul>

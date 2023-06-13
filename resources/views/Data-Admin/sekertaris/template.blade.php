@@ -223,13 +223,6 @@
     <!--- ====================================== -->
     <!-- Content halaman admin -->
    <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    {{-- <section class="content-header">
-      <ol class="breadcrumb">
-        <li><a href="#"> Dashboard</a></li>
-        <li class="active"> Beranda</li>
-      </ol>
-    </section> --}}
 
     <section class="content">
     <div class="container">

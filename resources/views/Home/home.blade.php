@@ -74,7 +74,7 @@
             </ul>
           </li>
           <li>
-            <a href="{{url('http://127.0.0.1:8000/login')}}">
+            <a href="{{url('login')}}">
             <button class="button"> Login</button></a>
           </li>
         </ul>

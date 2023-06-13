@@ -15,11 +15,11 @@ use App\Models\Sejarah;
 use App\Models\Renungan;
 use App\Models\Program_Klasis;
 use App\Models\Program_wilayah;
-use App\Models\Program_pusat;
 use App\Models\IuranWajib;
 use App\Models\Kengiatan;
 use App\Models\Organisasi;
 use App\Models\Profile_Ketua;
+use App\Models\Program_Pusat;
 use App\Models\UploadProfile;
 use App\Models\User;
 use App\Models\Video;
@@ -93,8 +93,8 @@ class UserUmumController extends Controller
 
     public function program_pusat(){
         $corousel = Carousel::all();
-        $program_pusat = Program_pusat::all();
-        return view('Tampilan-User.program_pusat', compact('program_pusat', 'corousel'))->with('program_pusat', $program_pusat)->with('i', (request()->input('page', 1) - 1) * 5);
+         $program_pusat = Program_Pusat::all();
+        return view('Tampilan-User.program_pusat', compact('program_pusat', 'corousel'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function iuran(){

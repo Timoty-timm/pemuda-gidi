@@ -24,7 +24,8 @@
   <link rel="stylesheet" href="{{URL::to('/dist/css/AdminLTE.min.css')}}">
   <!-- Color and bakcground -->
   <link rel="stylesheet" href="{{URL::to('/dist/css/skins/_all-skins.min.css')}}">
-
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->

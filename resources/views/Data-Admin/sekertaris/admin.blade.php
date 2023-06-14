@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sistem Informasi | Pemunda GIDI</title>
   
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script> --}}
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -239,19 +239,9 @@
     <section class="content">
     <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-11">
-            <div class="card">
-                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ dashboard') }}</div>
+        <div class="col-md-12">
+                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ Dashboard') }}</div>
                  <hr>
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -262,7 +252,7 @@
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-6 " >
+            <div class="col-lg-6" >
               <script src="https://code.highcharts.com/highcharts.js"></script>
               <div id="container">
               </div>
@@ -270,7 +260,7 @@
               </div>
             </div>
               <div class="row">
-                <div class="col-lg-6 " >
+                <div class="col-lg-4 " >
             <h4 class="text-center" style="font-family:Arial, Helvetica, sans-serif" > <b> Pengumuman</b></h4>
             @foreach ($pengumuman as $p)
      

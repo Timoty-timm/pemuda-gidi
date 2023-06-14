@@ -22,7 +22,7 @@
         <div class="col-lg-4">
 <br>
             <div class="card shadow">
-              <a href="/berita-duka/{{ $item->id }}">
+              <a href="/image/{{ $item->image }}">
                 <img src="/image/{{ $item->image }}" width="300px" height="200" >
               </a>
               <div class="card-body">

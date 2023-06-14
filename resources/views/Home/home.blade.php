@@ -104,7 +104,7 @@
               <div class="swiper-wrapper">
                 @foreach ($corousel as $carousel)
                   <div class="swiper-slide">
-                      <a href="{{ url('beranda') }}" class="img-bg d-flex align-items-end text-white" style="background-image: url('/image/{{ $carousel->image }}');">
+                      <a href="/" class="img-bg d-flex align-items-end text-white" style="background-image: url('/image/{{ $carousel->image }}');">
                         <div class="img-bg-inner">
                             <h4><b> {{ $carousel->title}}</b></h4>
                             {!! $carousel->isi !!}
@@ -174,7 +174,7 @@
                             </div>
                         </div>
                     </div>
-                                <div class="col-12 col-md-4 d-flex mt-md-0 mb-4" >
+                        <div class="col-12 col-md-4 d-flex mt-md-0 mb-4" >
                         <div class="col-12 shadow-sm p-4 rounded" style="background-color: #87A1B4">
                             <div class="col-12 d-flex">
                                 <div class="col-7">

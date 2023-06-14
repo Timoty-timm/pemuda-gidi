@@ -6,35 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title> Sistem Informasi | Pemunda GIDI</title>
 
-  <link href="/images/gidi.jpg" rel="icon">
-  {{-- link boostrapp --}}
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ URL::asset('plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Bootstrap 3.3.7 -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{URL::to('/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{URL::to('/bower_components/font-awesome/css/font-awesome.min.css')}}">
   <!-- Ionicons -->
-  <link rel="stylesheet" href="/bower_components/Ionicons/css/ionicons.min.css">
+  <link rel="stylesheet" href="{{URL::to('/bower_components/Ionicons/css/ionicons.min.css')}}">
      <!-- jvectormap -->
-  <link rel="stylesheet" href="/bower_components/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="{{URL::to('/bower_components/jvectormap/jquery-jvectormap.css')}}">
   <!-- Tema style -->
-  <link rel="stylesheet" href="{{URL::asset('dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{URL::to('/dist/css/AdminLTE.min.css')}}">
   <!-- Color and bakcground -->
-  <link rel="stylesheet" href="{{URL::asset('dist/css/skins/_all-skins.min.css')}}">
+  <link rel="stylesheet" href="{{URL::to('/dist/css/skins/_all-skins.min.css')}}">
 
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ URL::asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+  <link rel="stylesheet" href="/plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{ URL::asset('plugins/daterangepicker/daterangepicker.css') }}">
+  <link rel="stylesheet" href="/plugins/daterangepicker/daterangepicker.css">
   <!-- summernote -->
-  <link rel="stylesheet" href="{{ URL::asset('plugins/summernote/summernote-bs4.min.css') }}">
+  <link rel="stylesheet" href="/plugins/summernote/summernote-bs4.min.css">
 
 </head>
 
@@ -94,8 +92,8 @@
 
                   <!-- Menu Ecount-->
                   <li class="user-footer">
-                      <li><a href="{{url('/password')}}"><i class="fa fa-gear fa-fw"></i> Ganti Passwor Baru</a></li><br>
-                      <li><a href="{{url('/logout')}}"><i class="fa fa-sign-out fa-fw"></i> Keluar</a></li>
+                      <li><a href="{{url('password')}}"><i class="fa fa-gear fa-fw"></i> Ganti Passwor Baru</a></li><br>
+                      <li><a href="{{url('logout')}}"><i class="fa fa-sign-out fa-fw"></i> Keluar</a></li>
                       <i class="fa-solid fa-right-from-bracket"></i>
                       <li class="divider"></li>
                   </li>
@@ -241,9 +239,19 @@
     <section class="content">
     <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
-                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ Dashboard') }}</div>
+        <div class="col-md-11">
+            <div class="card">
+                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ dashboard') }}</div>
                  <hr>
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -254,7 +262,7 @@
         <div class="container-fluid">
           <!-- Small boxes (Stat box) -->
           <div class="row">
-            <div class="col-lg-6" >
+            <div class="col-lg-6 " >
               <script src="https://code.highcharts.com/highcharts.js"></script>
               <div id="container">
               </div>
@@ -262,7 +270,7 @@
               </div>
             </div>
               <div class="row">
-                <div class="col-lg-4 " >
+                <div class="col-lg-6 " >
             <h4 class="text-center" style="font-family:Arial, Helvetica, sans-serif" > <b> Pengumuman</b></h4>
             @foreach ($pengumuman as $p)
      
@@ -381,26 +389,26 @@
 
 
 <!-- jQuery 3 -->
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="{{URL::to('/bower_components/jquery/dist/jquery.min.js')}}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="{{URL::to('/bower_components/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <!-- FastClick -->
-<script src="bower_components/fastclick/lib/fastclick.js"></script>
+<script src="{{URL::to('/bower_components/fastclick/lib/fastclick.js')}}"></script>
 <!-- AdminLTE App -->
-<script src="{{URL::asset('dist/js/adminlte.min.js')}}"></script>
+<script src="{{URL::to('/dist/js/adminlte.min.js')}}"></script>
 <!-- Sparkline -->
-<script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
+<script src="{{URL::to('/bower_components/jquery-sparkline/dist/jquery.sparkline.min.js')}}"></script>
 <!-- jvectormap  -->
-<script src="{{URL::asset('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
-<script src="{{URL::asset('plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
+<script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
+<script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
 <!-- SlimScroll -->
-<script src="{{URL::asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+<script src="{{URL::to('/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <!-- ChartJS -->
-<script src="{{URL::asset('bower_components/chart.js/Chart.js')}}"></script>
+<script src="{{URL::to('/bower_components/chart.js/Chart.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{URL::asset('dist/js/pages/dashboard2.js')}}"></script>
+<script src="{{URL::to('/dist/js/pages/dashboard2.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{URL::asset('dist/js/demo.js')}}"></script>
+<script src="{{URL::to('/dist/js/demo.js')}}"></script>
  {{-- Create the chart --}}
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>
@@ -425,7 +433,7 @@ Highcharts.chart('container', {
     },
     yAxis: {
         title: {
-            text: '<b style="font-size:9px">TOTAL PERSENT WILAYAH</b>  <span style="font-size:9px">'
+            text: '<b style="font-size:12px">TOTAL PERSENT WILAYAH</b>  <span style="font-size:12px">'
         }
 
     },
@@ -443,52 +451,52 @@ Highcharts.chart('container', {
     },
 
     tooltip: {
-        headerFormat: '<span style="font-size:9px">{series.name}</span><br>',
-        pointFormat: '<span style="font-size:9px;color:{point.color}"> <b style="font-size:9px;">{point.name}</span>:</b> <b style="font-size:9px;"><b style="font-size:12px;"> {point.y:.2f}%</b> of total</b><br/>'
+        headerFormat: '<span style="font-size:12px">{series.name}</span><br>',
+        pointFormat: '<span style="font-size:12px;color:{point.color}"> <b style="font-size:12px;">{point.name}</span>:</b> <b style="font-size:12px;"><b style="font-size:12px;"> {point.y:.2f}%</b> of total</b><br/>'
     },
 
     series: [
         {
-            name: 'WILAYAH',
+            name: '<b style="font-size:12px">WILAYAH</b>  <span style="font-size:12px">',
             colorByPoint: true,
             data: [
               {
-              name: 'Toli',
+              name: '<b style="font-size:12px">Toli</b>  <span style="font-size:12px">',
                     y:  {{ $cowntoli }},
                     drilldown: 'Toli'
                 },
                 {
-                    name: 'Bogo',
+                    name: '<b style="font-size:12px">Bogo</b>  <span style="font-size:12px">',
                     y: {{ $cownbogo }},
                     drilldown: 'Bogo'
                 },
                 {
-                    name: 'Yamo',
+                    name: '<b style="font-size:12px">Yamo</b>  <span style="font-size:12px">',
                     y: {{ $cownyamo }},
                     drilldown: 'Yamo'
                 },
                 {
-                    name: 'Yahukimo',
+                    name: '<b style="font-size:12px">Yahukimo</b>  <span style="font-size:12px">',
                     y: {{ $cownyahukimo }},
                     drilldown: 'Yahukimo'
                 },
                 {
-                    name: 'Pengunungan Bintang',
+                    name: '<b style="font-size:12px">Pengunungan Bintang</b>  <span style="font-size:12px">',
                     y: {{ $cownbintang}},
                     drilldown: 'Pengunungan Bintang'
                 },
                 {
-                    name: 'Pantai Selatan',
+                    name: '<b style="font-size:12px">Pantai Selatan</b>  <span style="font-size:12px">',
                     y: {{ $cownselatan }},
                     drilldown: 'Pantai Selatan'
                 },
                 {
-                    name: 'Pantai Utara',
+                    name: '<b style="font-size:12px">Pantai Utara</b>  <span style="font-size:12px">',
                     y: {{ $cownutara }},
                     drilldown: 'Pantai Utara'
                 },
                 {
-                    name: 'Jasumbas',
+                    name: '<b style="font-size:12px">Jasumbas</b>  <span style="font-size:12px">',
                     y: {{ $cownjasumbas }},
                     drilldown: 'Jasumbas'
                 }

@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Login Sistem Pemuda GIDI</title>
          <!-- Tema style -->
+         <link href="/images/gidi.jpg" rel="icon">
         <link rel="stylesheet" href="{{URL::to('/dist/css/AdminLTE.min.css')}}">
          <!-- Google Font -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">

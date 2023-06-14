@@ -11,7 +11,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="able/assets/img/logo_pemudagidi.png" rel="icon">
+  <link href="images/gidi.jpg" rel="icon">
+  {{-- <link href="able/assets/img/logo_pemudagidi.png" rel="icon"> --}}
   <link href="able/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -49,7 +50,7 @@
 
       <nav id="navbar" class="navbar ml-5" >
         <ul class="nav-list">
-         <li><a class="navbar-brand" href="{{ url('beranda')}}" style="color: white;"> Beranda</a></li>
+         <li><a class="navbar-brand" href="{{ url('/')}}" style="color: white;"> Beranda</a></li>
           <li class="dropdown"><a href="#"><span>Profil</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
           <ul>
               <li><a href="{{url('user-vimisi')}}">Visi dan Misi</a></li>

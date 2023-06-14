@@ -13,7 +13,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="{{ URL::to('/plugins/fontawesome-free/css/all.min.css') }}">
+  <link rel="stylesheet" href="{{ URL::asset('plugins/fontawesome-free/css/all.min.css') }}">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Bootstrap 3.3.7 -->
@@ -25,16 +25,16 @@
      <!-- jvectormap -->
   <link rel="stylesheet" href="/bower_components/jvectormap/jquery-jvectormap.css">
   <!-- Tema style -->
-  <link rel="stylesheet" href="{{URL::to('/dist/css/AdminLTE.min.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('dist/css/AdminLTE.min.css')}}">
   <!-- Color and bakcground -->
-  <link rel="stylesheet" href="{{URL::to('/dist/css/skins/_all-skins.min.css')}}">
+  <link rel="stylesheet" href="{{URL::asset('dist/css/skins/_all-skins.min.css')}}">
 
   <!-- overlayScrollbars -->
-  <link rel="stylesheet" href="{{ URL::to('/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
+  <link rel="stylesheet" href="{{ URL::asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
   <!-- Daterange picker -->
-  <link rel="stylesheet" href="{{ URL::to('/plugins/daterangepicker/daterangepicker.css') }}">
+  <link rel="stylesheet" href="{{ URL::asset('plugins/daterangepicker/daterangepicker.css') }}">
   <!-- summernote -->
-  <link rel="stylesheet" href="{{ URL::to('/plugins/summernote/summernote-bs4.min.css') }}">
+  <link rel="stylesheet" href="{{ URL::asset('plugins/summernote/summernote-bs4.min.css') }}">
 
 </head>
 
@@ -387,20 +387,20 @@
 <!-- FastClick -->
 <script src="bower_components/fastclick/lib/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="{{URL::to('/dist/js/adminlte.min.js')}}"></script>
+<script src="{{URL::asset('dist/js/adminlte.min.js')}}"></script>
 <!-- Sparkline -->
 <script src="bower_components/jquery-sparkline/dist/jquery.sparkline.min.js"></script>
 <!-- jvectormap  -->
-<script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
-<script src="{{URL::to('/plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
+<script src="{{URL::asset('plugins/jvectormap/jquery-jvectormap-1.2.2.min.js')}}"></script>
+<script src="{{URL::asset('plugins/jvectormap/jquery-jvectormap-world-mill-en.js')}}"></script>
 <!-- SlimScroll -->
-<script src="{{URL::to('/bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
+<script src="{{URL::asset('bower_components/jquery-slimscroll/jquery.slimscroll.min.js')}}"></script>
 <!-- ChartJS -->
-<script src="{{URL::to('/bower_components/chart.js/Chart.js')}}"></script>
+<script src="{{URL::asset('bower_components/chart.js/Chart.js')}}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{URL::to('/dist/js/pages/dashboard2.js')}}"></script>
+<script src="{{URL::asset('dist/js/pages/dashboard2.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{URL::to('/dist/js/demo.js')}}"></script>
+<script src="{{URL::asset('dist/js/demo.js')}}"></script>
  {{-- Create the chart --}}
 <script src="https://code.highcharts.com/highcharts.js"></script>
 <script>

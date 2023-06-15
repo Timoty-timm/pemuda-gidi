@@ -7,7 +7,7 @@
   <title> Sistem Informasi | Pemunda GIDI</title>
 
 
-
+ <link href="images/gidi.jpg" rel="icon">
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -58,27 +58,7 @@
           <div class="navbar-custom-menu">
             <ul class="nav navbar-nav">
 
-             <!-- Notifications Dropdown Menu -->
-             {{-- <li class="dropdown notifications-menu">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                  <i class="fa fa-bell-o"></i>
-                  <span class="label label-warning">{{ $counts }}
-                    @if(session('success'))
-                    {{ session('success') }} 
-                @endif
-                  </span>
-                </a>
-                <ul class="dropdown-menu">  
-                  <li class="header "> <p style="color: rgb(199, 21, 146)"> Semua {{ $counts }} notifications yang ditampil</p></li>
-                  <li>
-          
-                   
-                  </li>
-                  <li class="footer"><a href="#">View all</a></li>
-                </ul>
-              </li> --}}
-            <!-- End Notofikasi -->
-
+           
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown">
                 <a href="#"
@@ -241,7 +221,7 @@
     <div class="row justify-content-center">
         <div class="col-md-11">
             <div class="card">
-                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ dashboard') }}</div>
+                <div class="card-header"> <a href="{{ url('sekertaris') }}">Home</a> {{ __('/ Dashboard') }}</div>
                  <hr>
                 <div class="card-body">
                     @if (session('status'))

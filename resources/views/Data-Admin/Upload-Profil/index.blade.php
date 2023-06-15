@@ -22,7 +22,7 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
     <div class="row">
     <div class="col-lg-6 mt-5">
-        <a class="btn btn-success" href="{{ route('profile.create') }}"> <i class="fa fa-plus"> Tambah Data</i> </a>
+        {{-- <a class="btn btn-success" href="{{ route('profile.create') }}"> <i class="fa fa-plus"> Tambah Data</i> </a> --}}
         @forelse($profil as $key => $item)
         <br><br>
          <h4 style="font-family: Arial, black"> <b>Ketua Pusat Pemuda GIDI</b></h4></center> 
@@ -38,7 +38,7 @@
             </div>
         </div>
         @endforeach
-        <a class="btn btn-success" href="{{ url('sprofile/create_ketua') }}"> <i class="fa fa-plus"> Tambah Data</i> </a>
+        {{-- <a class="btn btn-success" href="{{ url('sprofile/create_ketua') }}"> <i class="fa fa-plus"> Tambah Data</i> </a> --}}
        <br><br>
       
    

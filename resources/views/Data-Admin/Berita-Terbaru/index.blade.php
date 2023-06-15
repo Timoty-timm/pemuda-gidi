@@ -15,7 +15,7 @@
         </div>
     @endif
     <h4 class="text-center" style="font-family:Arial Black" >Informasi Terbaru</h4>
-    <a class="btn btn-success" href="{{ route('berita-terbaru.create') }}"> <i class="fa fa-plus"> Tambah Data</i> </a>
+    {{-- <a class="btn btn-success" href="{{ route('berita-terbaru.create') }}"> <i class="fa fa-plus"> Tambah Data</i> </a> --}}
     &nbsp;&nbsp;&nbsp;&nbsp;
 <br>
         @forelse($berita as $key => $item)

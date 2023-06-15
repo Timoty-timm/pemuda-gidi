@@ -13,7 +13,7 @@
     <div class="col-lg-4">
        <br>
         <div class="card shadow">
-          <a href="/berita-duka/{{ $product->id }}">
+          <a href="/image/{{ $product->image }}">
             <img src="/image/{{ $product->image }}" width="341px" height="200" >
           </a>
           <div class="card-body">

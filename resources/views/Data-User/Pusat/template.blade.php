@@ -190,7 +190,7 @@
         <div class="col-md-8">
             <div class="card">
               <div class="card">
-                <div class="card-header"> <a href="{{ url('pusat') }}">Home</a> {{ __('/ dashboard') }}</div>
+                <div class="card-header"> <a href="{{ url('pusat') }}">Home</a> {{ __('/ Dashboard') }}</div>
                 <hr>
             </div>
 

@@ -10,11 +10,11 @@
 <br><br>
 <div class="row">
     @forelse($galeri as $key => $product)
-    <div class="col-lg-4">
+    <div class="col-lg-6">
        <br>
         <div class="card shadow">
           <a href="/image/{{ $product->image }}">
-            <img src="/image/{{ $product->image }}" width="341px" height="200" >
+            <img src="/image/{{ $product->image }}" width="341px" height="200 " >
           </a>
           <div class="card-body">
            

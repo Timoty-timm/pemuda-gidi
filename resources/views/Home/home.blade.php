@@ -157,7 +157,7 @@
                 </div>
             </div>
                         <div class="col-12 col-md-4 d-flex mt-md-0 mb-4" >
-                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: #87A1B4;">
+                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: rgb(54, 157, 231)">
                             <div class="col-12 d-flex">
 
                                 <div class="col-8">
@@ -176,7 +176,7 @@
                         </div>
                     </div>
                         <div class="col-12 col-md-4 d-flex mt-md-0 mb-4" >
-                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: #87A1B4">
+                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: #81b1d8">
                             <div class="col-12 d-flex">
                                 <div class="col-7">
                                     <span>JUMLAH LAKI LAKI</span>
@@ -194,7 +194,7 @@
                         </div>
                     </div>
                                 <div class="col-12 col-md-4 d-flex mt-md-0 mb-4" >
-                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: #87A1B4">
+                        <div class="col-12 shadow-sm p-4 rounded" style="background-color: 	#b7e2f3">
                             <div class="col-12 d-flex">
                                 <div class="col-8">
                                     <span>JUMLAH PEREMPUAN</span>
@@ -269,7 +269,7 @@
                 </div>
                 <br>
                   <b>{{ $item->nama }}</b>
-                  <p>Profile Ketua Pusat Pemuda GIDI </p>
+                  <p>Ketua Departemen Pusat </p>
                 @endforeach
                 <br><br><br><br>
                 @foreach ($profil as $item)
@@ -283,7 +283,7 @@
                 </div>
                 <br>
                   <b>{{ $item->nama }}</b>
-                  <p>Profile Wakil Ketua Pusat Pemuda GIDI</p>
+                  <p>Sekretaris Departemen Pusat</p>
                 @endforeach
         </div>
         </div>
